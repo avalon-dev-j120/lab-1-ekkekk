@@ -3,6 +3,7 @@ package ru.avalon.java.j20.labs.tasks;
 import ru.avalon.java.j20.labs.Task;
 import ru.avalon.java.j20.labs.core.RandomArrayFactory;
 import ru.avalon.java.j20.labs.models.Numbers;
+import static ru.avalon.java.j20.labs.models.Numbers.sum;
 
 /**
  * Задание №1.
@@ -24,10 +25,21 @@ public class Task1 implements Task {
      */
     @Override
     public void run() {
-        int[] array = arrayFactory.getInstance(20);
-        int min = Numbers.min(array);
-        int max = Numbers.max(array);
-        double avg = Numbers.avg(array);
+        //int[] array = arrayFactory.getInstance(20);
+        Integer[] intArray = {10, 10, 15, 15};
+        Double[] dArray = {10.0, 10.10, 15.15, 15.10};
+    
+        double avg = Numbers.avg(intArray);
+        double avg2 = Numbers.avg(dArray);
+        
+        double max = Numbers.max(intArray);
+        double max2 = Numbers.max(dArray);
+    
+        double min = Numbers.min(intArray);
+        double min2 = Numbers.min(dArray);}
+        
+        //int min = Numbers.min(array);
+        
         /*
          * TODO(Студент): Выполните задание №1
          *
@@ -54,5 +66,6 @@ public class Task1 implements Task {
          * 4. С использованием отладчика проверьте корректность
          *    выполнения задания.
          */
-    }
+    
+
 }

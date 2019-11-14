@@ -8,12 +8,21 @@ import ru.avalon.java.j20.labs.Task;
  * <p>Тема: "Создание обобщённых классов".
  */
 public class Task2 implements Task {
-
+  
     /**
      * {@inheritDoc}
      */
     @Override
     public void run() {
+        
+        Point<Integer> intPoint = new Point (x:10, y:10);
+        Point<Double> floatPoint = new Point (x:100.00f, y:10.0f);
+            
+
+//                getDistance(intPoint x, intPoint y, floatPoint x, floatPoint y);
+//        Distance = Math.sqrt((intPoint x - floatPoint x) * (intPoint x - floatPoint x) + (intPoint y - floatPoint y) * (intPoint y - floatPoint y));
+
+        System.out.println(intPoint.distanceTo(floatPoint));
         /*
          * TODO(Студент): Выполнять задание №2
          *
